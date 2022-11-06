@@ -1,4 +1,7 @@
+using AutoMapper;
+using GeekShooping.ProdutoAPI.Config;
 using GeekShooping.ProdutoAPI.Model.Context;
+using GeekShooping.ProdutoAPI.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +14,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSqlServer<SQLServerContext>(builder.Configuration["Database:SqlServer"]);
 
 builder.Services.AddSwaggerGen();
+
+//Configuração do Mapper
+IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
+builder.Services.AddSingleton(mapper);
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 
 var app = builder.Build();
 
