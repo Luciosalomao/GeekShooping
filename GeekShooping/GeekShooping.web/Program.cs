@@ -1,5 +1,7 @@
 using GeekShooping.web.Services;
 using GeekShooping.web.Services.IServices;
+using Microsoft.AspNetCore.Localization;
+using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +14,15 @@ builder.Services.AddHttpClient<IServiceProduto, ProdutoService>(c =>
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+var supportedCultures = new[] { new CultureInfo("en-us") };
+app.UseRequestLocalization(new RequestLocalizationOptions
+{
+    DefaultRequestCulture = new RequestCulture("en-us"),
+    SupportedCultures = supportedCultures,
+    SupportedUICultures = supportedCultures
+});
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

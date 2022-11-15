@@ -2,7 +2,7 @@
 
 <br/>
 <br/>
-<div class="container p-4 border">
+<div class="container p-4 border" >
     <div class="row pb-2">
         <div class="col">
             <h1 class="text-primary">Lista de Produtos</h1>
@@ -13,4 +13,45 @@
             </a>
         </div>
     </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    Categoria
+                </th>
+                <th>
+                    Preço
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Nome
+                    </td>
+                    <td>
+                        @item.Categoria
+                    </td>
+                    <td>
+                        @((item.Preco).ToString("c"))
+                    </td>
+                    <td>
+                        <a asp-action="ProdutoUpdate" class="btn btn-success" asp-route-id="@item.Id">
+                            <i class="fas fa-edit"></i>
+                        </a>                        
+                    </td>
+                    <td>
+                        <a asp-action="ProdutoDelete" class="btn btn-danger" asp-route-id="@item.Id">
+                            <i class="fas fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>

@@ -23,16 +23,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Fork/GeekShooping/GeekShooping/GeekShooping.web/Views/Produto/ProdutoCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xQcm9kdXRvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Fork/GeekShooping/GeekShooping/GeekShooping.web/Views/Produto/ProdutoIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xQcm9kdXRvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.web/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[C:/Fork/GeekShooping/GeekShooping/GeekShooping.web/Views/Produto/ProdutoUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xQcm9kdXRvVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.web/Views/Shared/_Layout_exemplo.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfZXhlbXBsby5jc2h0bWw=
+[C:/Fork/GeekShooping/GeekShooping/GeekShooping.web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Fork/GeekShooping/GeekShooping/GeekShooping.web/Views/Shared/_ValidationScriptsPartial.cshtml]
