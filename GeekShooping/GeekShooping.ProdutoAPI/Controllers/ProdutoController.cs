@@ -20,7 +20,7 @@ namespace GeekShooping.ProdutoAPI.Controllers
         public async Task<ActionResult<ProdutoVO>> FindById(long id)
         {
             var produto = await _repository.FindById(id);
-            if (produto == null) return NotFound();
+            if (produto.Id <= 0) return NotFound();
             return Ok(produto);
         }
 
