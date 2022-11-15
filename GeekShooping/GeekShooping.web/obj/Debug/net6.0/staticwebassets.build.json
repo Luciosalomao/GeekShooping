@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QS/nDQzIZBlt2bJw6vC+/5z5ugR7d5dN6cbZFUZRLIw=",
+  "Hash": "458u5HgPK336jdEV/qsr17n7d1H9lUM79vUX/wyMIdQ=",
   "Source": "GeekShooping.web",
   "BasePath": "_content/GeekShooping.web",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Fork\\GeekShooping\\GeekShooping\\GeekShooping.web\\wwwroot\\images\\favicon.png",
+      "SourceId": "GeekShooping.web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Fork\\GeekShooping\\GeekShooping\\GeekShooping.web\\wwwroot\\",
+      "BasePath": "_content/GeekShooping.web",
+      "RelativePath": "images/favicon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Fork\\GeekShooping\\GeekShooping\\GeekShooping.web\\wwwroot\\images\\geek_shopping.png",
+      "SourceId": "GeekShooping.web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Fork\\GeekShooping\\GeekShooping\\GeekShooping.web\\wwwroot\\",
+      "BasePath": "_content/GeekShooping.web",
+      "RelativePath": "images/geek_shopping.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\geek_shopping.png"
     },
     {
       "Identity": "C:\\Fork\\GeekShooping\\GeekShooping\\GeekShooping.web\\wwwroot\\js\\site.js",

@@ -16,7 +16,6 @@ C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\obj\Debug\net6.0\GeekShooping
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\obj\Debug\net6.0\GeekShooping.web.RazorAssemblyInfo.cs
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\obj\Debug\net6.0\staticwebassets.build.json
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\obj\Debug\net6.0\staticwebassets.development.json
-C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\obj\Debug\net6.0\scopedcss\bundle\GeekShooping.web.styles.css
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\obj\Debug\net6.0\scopedcss\projectbundle\GeekShooping.web.bundle.scp.css
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\obj\Debug\net6.0\GeekShooping.web.dll
@@ -24,3 +23,4 @@ C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\obj\Debug\net6.0\refint\GeekS
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\obj\Debug\net6.0\GeekShooping.web.pdb
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\obj\Debug\net6.0\GeekShooping.web.genruntimeconfig.cache
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\obj\Debug\net6.0\ref\GeekShooping.web.dll
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
