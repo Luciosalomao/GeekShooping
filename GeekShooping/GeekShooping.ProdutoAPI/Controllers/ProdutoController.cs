@@ -48,7 +48,7 @@ namespace GeekShooping.ProdutoAPI.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult> Delete(long id)
+        public async Task<ActionResult<ProdutoVO>> Delete(long id)
         {
             var produto = await _repository.Delete(id);
             if (produto == null) return NotFound();
