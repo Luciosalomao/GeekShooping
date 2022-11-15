@@ -45,7 +45,10 @@ namespace GeekShooping.web.Services
         {
             var response = await _client.DeleteAsync($"{BasePath}/{id}");
             if (response.IsSuccessStatusCode)
-                return await response.ReadContentAs<bool>();
+            {
+                bool success = true;
+                return success; //return await response.ReadContentAs<bool>();
+            }
             else throw new Exception("Algo deu errado ao chamar a API");
         }
 
