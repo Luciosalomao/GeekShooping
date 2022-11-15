@@ -32,7 +32,7 @@ namespace GeekShooping.ProdutoAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<IEnumerable<ProdutoVO>>> Create(ProdutoVO VO)
+        public async Task<ActionResult<IEnumerable<ProdutoVO>>> Create([FromBody] ProdutoVO VO)
         {
             if (VO == null) return BadRequest();
             var produtos = await _repository.Create(VO);
@@ -40,7 +40,7 @@ namespace GeekShooping.ProdutoAPI.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult<IEnumerable<ProdutoVO>>> Update(ProdutoVO VO)
+        public async Task<ActionResult<IEnumerable<ProdutoVO>>> Update([FromBody] ProdutoVO VO)
         {
             if (VO == null) return BadRequest();
             var produtos = await _repository.Update(VO);
