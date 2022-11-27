@@ -1,3 +1,8 @@
+using GeekShooping.IdentityServer.Configuration;
+using GeekShooping.IdentityServer.Model;
+using GeekShooping.IdentityServer.Model.Context;
+using Microsoft.AspNetCore.Identity;
+
 namespace GeekShooping.IdentityServer
 {
     public class Program
@@ -8,9 +13,26 @@ namespace GeekShooping.IdentityServer
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddSqlServer<SQLContext>(builder.Configuration["Database:SqlServer"]);
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<SQLContext>()
+                .AddDefaultTokenProviders();
 
+            builder.Services.AddIdentityServer(options =>
+            {
+                options.Events.RaiseErrorEvents = true;
+                options.Events.RaiseInformationEvents = true;
+                options.Events.RaiseFailureEvents = true;
+                options.Events.RaiseSuccessEvents = true;
+                options.EmitStaticAudienceClaim = true;
+            }).AddInMemoryIdentityResources(IdentityConfiguration.IdentityResources)
+            .AddInMemoryApiScopes(IdentityConfiguration.ApiScopes)
+            .AddInMemoryClients(IdentityConfiguration.Clients)
+            .AddAspNetIdentity<ApplicationUser>()
+            .AddDeveloperSigningCredential();
+          
             var app = builder.Build();
-
+                                  
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
@@ -19,7 +41,7 @@ namespace GeekShooping.IdentityServer
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseIdentityServer();
             app.UseAuthorization();
 
             app.MapControllerRoute(
