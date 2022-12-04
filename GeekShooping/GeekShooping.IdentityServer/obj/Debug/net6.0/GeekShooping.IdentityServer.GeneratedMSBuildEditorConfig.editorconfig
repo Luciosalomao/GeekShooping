@@ -15,84 +15,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/MainModule/Account/AccessDenied.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TWFpbk1vZHVsZVxBY2NvdW50XEFjY2Vzc0RlbmllZC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/MainModule/Account/Login/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TWFpbk1vZHVsZVxBY2NvdW50XExvZ2luXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/MainModule/Account/Logout/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TWFpbk1vZHVsZVxBY2NvdW50XExvZ291dFxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/MainModule/Account/Logout/LoggedOut.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TWFpbk1vZHVsZVxBY2NvdW50XExvZ291dFxMb2dnZWRPdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/MainModule/Ciba/All.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TWFpbk1vZHVsZVxDaWJhXEFsbC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/MainModule/Ciba/Consent.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TWFpbk1vZHVsZVxDaWJhXENvbnNlbnQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/MainModule/Ciba/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TWFpbk1vZHVsZVxDaWJhXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/MainModule/Ciba/_ScopeListItem.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TWFpbk1vZHVsZVxDaWJhXF9TY29wZUxpc3RJdGVtLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/MainModule/Consent/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TWFpbk1vZHVsZVxDb25zZW50XEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/MainModule/Consent/_ScopeListItem.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TWFpbk1vZHVsZVxDb25zZW50XF9TY29wZUxpc3RJdGVtLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/MainModule/Device/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TWFpbk1vZHVsZVxEZXZpY2VcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/MainModule/Device/Success.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TWFpbk1vZHVsZVxEZXZpY2VcU3VjY2Vzcy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/MainModule/Device/_ScopeListItem.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TWFpbk1vZHVsZVxEZXZpY2VcX1Njb3BlTGlzdEl0ZW0uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/MainModule/Diagnostics/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TWFpbk1vZHVsZVxEaWFnbm9zdGljc1xJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/MainModule/ExternalLogin/Callback.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TWFpbk1vZHVsZVxFeHRlcm5hbExvZ2luXENhbGxiYWNrLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/MainModule/ExternalLogin/Challenge.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TWFpbk1vZHVsZVxFeHRlcm5hbExvZ2luXENoYWxsZW5nZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/MainModule/Grants/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TWFpbk1vZHVsZVxHcmFudHNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/MainModule/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = TWFpbk1vZHVsZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/MainModule/Redirect/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TWFpbk1vZHVsZVxSZWRpcmVjdFxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/MainModule/ServerSideSessions/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TWFpbk1vZHVsZVxTZXJ2ZXJTaWRlU2Vzc2lvbnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/Views/Home/Error/Index.cshtml]
@@ -121,6 +45,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/Views/Shared/_ValidationSummary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU3VtbWFyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/Views/Usuario/Cadastrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDYWRhc3RyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Fork/GeekShooping/GeekShooping/GeekShooping.IdentityServer/Views/_ViewImports.cshtml]

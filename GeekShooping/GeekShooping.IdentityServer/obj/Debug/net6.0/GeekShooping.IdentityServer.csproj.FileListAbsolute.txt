@@ -404,3 +404,6 @@ C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\r
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\refs\System.Text.Json.dll
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\Humanizer.dll
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

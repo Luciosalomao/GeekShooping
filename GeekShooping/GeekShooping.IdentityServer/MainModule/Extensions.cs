@@ -2,7 +2,7 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Models;
+using IdentityServer4.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;

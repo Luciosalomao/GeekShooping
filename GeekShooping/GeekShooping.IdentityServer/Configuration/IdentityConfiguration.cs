@@ -1,5 +1,5 @@
-﻿using Duende.IdentityServer;
-using Duende.IdentityServer.Models;
+﻿using IdentityServer4;
+using IdentityServer4.Models;
 
 namespace GeekShooping.IdentityServer.Configuration
 {
