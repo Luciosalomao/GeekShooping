@@ -59,74 +59,80 @@ namespace GeekShooping.IdentityServer.MainModule
         public async Task<IActionResult> Cadastrar(
             [FromForm] CadastrarUsuarioViewModel usuarioVM)
         {
+
             if (!string.IsNullOrEmpty(usuarioVM.Id))
             {
                 ModelState.Remove("Senha");
                 ModelState.Remove("ConfSenha");
             }
-            if (ModelState.IsValid)
+
+            if (EntidadeExiste(usuarioVM.Id))
             {
-                if (EntidadeExiste(usuarioVM.Id))
+                var usuarioDB = await _userManager.FindByIdAsync(usuarioVM.Id);
+                if ((usuarioVM.Email != usuarioDB.Email) &&
+                    (_userManager.Users.Any(u => u.NormalizedEmail == usuarioVM.Email.ToUpper().Trim())))
                 {
-                    var usuarioDB = await _userManager.FindByIdAsync(usuarioVM.Id);
-                    if ((usuarioVM.Email != usuarioDB.Email) &&
-                        (_userManager.Users.Any(u => u.NormalizedEmail == usuarioVM.Email.ToUpper().Trim())))
-                    {
-                        ModelState.AddModelError("Email", "Já existe um usuário cadastrado com este e-mail.");
-                        return View(usuarioVM);
-                    }
-                    MapearCadastrarUsuarioViewModel(usuarioVM, usuarioDB);
 
-                    var resultado = await _userManager.UpdateAsync(usuarioDB);
-
-                    if (resultado.Succeeded)
-                    {
-                        this.MostrarMensagem("Usuário alterado com sucesso.");
-                        return RedirectToAction("Index");
-                    }  else
-                    {
-                        this.MostrarMensagem("Não foi possível alterar o usuário.", true);
-                        foreach (var error in resultado.Errors)
-                        {
-                            ModelState.AddModelError(string.Empty, error.Description);
-                        }
-                        return View(usuarioVM);
-                    }                   
-
-                } else
-                {
-                    var usuarioDB = await _userManager.FindByIdAsync(usuarioVM.Email);
-                    if (usuarioDB != null)
-                    {
-                        ModelState.AddModelError("Email", "Já existe um usuário cadastrado com este e-mail.");
-                        return View(usuarioDB);
-                    }
-
-                    usuarioDB = new IdentityUser();
-
-                    MapearCadastrarUsuarioViewModel(usuarioVM, usuarioDB);
-
-                    var resultado = await _userManager.CreateAsync(usuarioDB, usuarioVM.Senha);
-
-                    if (resultado.Succeeded)
-                    {
-                        this.MostrarMensagem("Usuário cadastrado com sucesso. Use suas credenciais para entrar no sistema");
-                        return RedirectToAction("Login");
-                    }
-                    else
-                    {
-                        this.MostrarMensagem("Erro ao cadastrar usuário.", true);
-                        foreach (var error in resultado.Errors)
-                        {
-                            ModelState.AddModelError(string.Empty, error.Description);
-                        }
-                        return View(usuarioVM);
-                    }
+                    ModelState.AddModelError("Email", "Já existe um usuário cadastrado com este e-mail.");
+                    return View(usuarioVM);
                 }
-            } else
-            {
-                return View(usuarioVM);
+                MapearCadastrarUsuarioViewModel(usuarioVM, usuarioDB);
+
+                var resultado = await _userManager.UpdateAsync(usuarioDB);
+
+
+                if (resultado.Succeeded)
+                {
+                    this.MostrarMensagem("Usuário alterado com sucesso.");
+                    return RedirectToAction("Index");
+
+                }
+                else
+                {
+                    this.MostrarMensagem("Não foi possível alterar o usuário.", true);
+                    foreach (var error in resultado.Errors)
+                    {
+                        ModelState.AddModelError(string.Empty, error.Description);
+                    }
+                    return View(usuarioVM);
+                }
+
             }
+            else
+            {
+                var usuarioDB = await _userManager.FindByIdAsync(usuarioVM.Email);
+                if (usuarioDB != null)
+                {
+
+                    ModelState.AddModelError("Email", "Já existe um usuário cadastrado com este e-mail.");
+                    return View(usuarioDB);
+                }
+
+                usuarioDB = new IdentityUser();
+
+                MapearCadastrarUsuarioViewModel(usuarioVM, usuarioDB);
+
+                var resultado = await _userManager.CreateAsync(usuarioDB, usuarioVM.Senha);
+
+
+
+
+                if (resultado.Succeeded)
+                {
+                    this.MostrarMensagem("Usuário cadastrado com sucesso. Use suas credenciais para entrar no sistema");
+                    return RedirectToAction("Login");
+                }
+                else
+                {
+                    this.MostrarMensagem("Erro ao cadastrar usuário.", true);
+                    foreach (var error in resultado.Errors)
+                    {
+                        ModelState.AddModelError(string.Empty, error.Description);
+                    }
+                    return View(usuarioVM);
+                }
+            }
+
         }
     }
 }

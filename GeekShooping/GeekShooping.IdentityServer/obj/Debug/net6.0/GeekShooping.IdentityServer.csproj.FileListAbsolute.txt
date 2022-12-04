@@ -293,9 +293,6 @@ C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\r
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\refs\WindowsBase.dll
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\AutoMapper.dll
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\Duende.IdentityServer.dll
-C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\Duende.IdentityServer.AspNetIdentity.dll
-C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\Duende.IdentityServer.Storage.dll
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\FluentAssertions.dll
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\IdentityModel.dll
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
@@ -407,3 +404,5 @@ C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\M
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\System.Net.Http.Formatting.dll
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\IdentityServer4.dll
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.IdentityServer\bin\Debug\net6.0\IdentityServer4.Storage.dll
