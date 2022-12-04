@@ -38,8 +38,9 @@
           "FluentAssertions": "6.8.0",
           "GeekShooping.ProdutoAPI": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.11",
-          "Microsoft.AspNetCore.Identity.UI": "7.0.0",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "6.0.11",
+          "Microsoft.EntityFrameworkCore": "6.0.11",
+          "Microsoft.EntityFrameworkCore.Design": "6.0.11",
           "Microsoft.AspNetCore.Antiforgery": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "6.0.0.0",
@@ -419,6 +420,14 @@
           "lib/net6.0/FluentAssertions.dll": {}
         }
       },
+      "Humanizer.Core/2.8.26": {
+        "runtime": {
+          "lib/netstandard2.0/Humanizer.dll": {
+            "assemblyVersion": "2.8.0.0",
+            "fileVersion": "2.8.26.1919"
+          }
+        }
+      },
       "IdentityModel/6.0.0": {
         "runtime": {
           "lib/net6.0/IdentityModel.dll": {
@@ -499,7 +508,6 @@
           "lib/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Identity.UI/7.0.0": {},
       "Microsoft.AspNetCore.Mvc.Razor.Extensions/6.0.11": {
         "dependencies": {
           "Microsoft.AspNetCore.Razor.Language": "6.0.11",
@@ -769,6 +777,18 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/6.0.11": {},
+      "Microsoft.EntityFrameworkCore.Design/6.0.11": {
+        "dependencies": {
+          "Humanizer.Core": "2.8.26",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.11"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
+            "assemblyVersion": "6.0.11.0",
+            "fileVersion": "6.0.1122.51302"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/6.0.11": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.11",
@@ -3681,6 +3701,13 @@
       "path": "fluentassertions/6.8.0",
       "hashPath": "fluentassertions.6.8.0.nupkg.sha512"
     },
+    "Humanizer.Core/2.8.26": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
+      "path": "humanizer.core/2.8.26",
+      "hashPath": "humanizer.core.2.8.26.nupkg.sha512"
+    },
     "IdentityModel/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3729,13 +3756,6 @@
       "sha512": "sha512-Z/PPOJihUoFflFYE9KuuqyvZbrc15xs7rAQlU493BZgLldL06R3ht5P8q89JzrUcmcacCfqzimMXBsKjMMMvoQ==",
       "path": "microsoft.aspnetcore.identity.entityframeworkcore/6.0.11",
       "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.6.0.11.nupkg.sha512"
-    },
-    "Microsoft.AspNetCore.Identity.UI/7.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-7hIgF+K5ppATRneTwxcCTBPbvr+lqYkA6aYde3JEAKo4Z8OoWZyYiOh6UR3pulakKGFFNxzdWUYLUmhLOcU/Yg==",
-      "path": "microsoft.aspnetcore.identity.ui/7.0.0",
-      "hashPath": "microsoft.aspnetcore.identity.ui.7.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.Razor.Extensions/6.0.11": {
       "type": "package",
@@ -3827,6 +3847,13 @@
       "sha512": "sha512-xke0hphu+BSBwt6Kfv/XERe3s1G7BZjNUByyNj0oIZVD1KPaIhMQJBKHtblkCI04cMnO1Ac2NMEgO67rM+cP/w==",
       "path": "microsoft.entityframeworkcore.analyzers/6.0.11",
       "hashPath": "microsoft.entityframeworkcore.analyzers.6.0.11.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Design/6.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2H9vcmv9PIboVMisL0izD+xaUaWeZ/jqqRJeaD8MKIDaKwZsdHE790Sa4fAHjZjzVgoraELRI7CscjPMfLE2jA==",
+      "path": "microsoft.entityframeworkcore.design/6.0.11",
+      "hashPath": "microsoft.entityframeworkcore.design.6.0.11.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/6.0.11": {
       "type": "package",

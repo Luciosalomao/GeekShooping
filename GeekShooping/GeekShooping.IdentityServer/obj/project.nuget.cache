@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "B/YwaSLWDARPPwKc0b5hf2qL8CPACUseqPvdbJvYDxeQGmhtUW8WJ4DrDc7pyiUmmdwiREolpTVxxycbj8zKOg==",
+  "dgSpecHash": "3WMxABckOcTiW6abaUE3lOjkEgCkXPGHp9Ojb9cWIGHXuB8rOPGvsZc2d2KyT5McpQsqHSpeRcYLTKhMBDB+gA==",
   "success": true,
   "projectFilePath": "C:\\Fork\\GeekShooping\\GeekShooping\\GeekShooping.IdentityServer\\GeekShooping.IdentityServer.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\lucio.souza\\.nuget\\packages\\duende.identityserver.aspnetidentity\\6.2.0\\duende.identityserver.aspnetidentity.6.2.0.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\duende.identityserver.storage\\6.2.0\\duende.identityserver.storage.6.2.0.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\fluentassertions\\6.8.0\\fluentassertions.6.8.0.nupkg.sha512",
+    "C:\\Users\\lucio.souza\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\identitymodel\\6.0.0\\identitymodel.6.0.0.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.10\\microsoft.aspnetcore.authentication.jwtbearer.6.0.10.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\6.0.0\\microsoft.aspnetcore.authentication.openidconnect.6.0.0.nupkg.sha512",
@@ -17,7 +18,6 @@
     "C:\\Users\\lucio.souza\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.11\\microsoft.aspnetcore.cryptography.keyderivation.6.0.11.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\microsoft.aspnetcore.dataprotection.abstractions\\6.0.0\\microsoft.aspnetcore.dataprotection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.11\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.11.nupkg.sha512",
-    "C:\\Users\\lucio.souza\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.0\\microsoft.aspnetcore.identity.ui.7.0.0.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.11\\microsoft.aspnetcore.mvc.razor.extensions.6.0.11.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\6.0.11\\microsoft.aspnetcore.mvc.razor.runtimecompilation.6.0.11.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
@@ -31,6 +31,7 @@
     "C:\\Users\\lucio.souza\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.11\\microsoft.entityframeworkcore.6.0.11.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.11\\microsoft.entityframeworkcore.abstractions.6.0.11.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.11\\microsoft.entityframeworkcore.analyzers.6.0.11.nupkg.sha512",
+    "C:\\Users\\lucio.souza\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.11\\microsoft.entityframeworkcore.design.6.0.11.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.11\\microsoft.entityframeworkcore.relational.6.0.11.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\microsoft.entityframeworkcore.relational.design\\1.1.6\\microsoft.entityframeworkcore.relational.design.1.1.6.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.10\\microsoft.entityframeworkcore.sqlserver.6.0.10.nupkg.sha512",
