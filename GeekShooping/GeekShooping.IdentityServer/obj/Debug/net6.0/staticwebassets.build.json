@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "u6w9ENalw55IqfSKRuuLXNCpYzlMGgQUiCUrpWzkxo4=",
+  "Hash": "XP1mAy6qNWNjoVrHuUdRX3NyS1Gok80p5iPpJMn0E/0=",
   "Source": "GeekShooping.IdentityServer",
   "BasePath": "_content/GeekShooping.IdentityServer",
   "Mode": "Default",
@@ -61,6 +61,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Fork\\GeekShooping\\GeekShooping\\GeekShooping.IdentityServer\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\GeekShooping.IdentityServer.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Fork\\GeekShooping\\GeekShooping\\GeekShooping.IdentityServer\\wwwroot\\css\\estilos.css",
+      "SourceId": "GeekShooping.IdentityServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Fork\\GeekShooping\\GeekShooping\\GeekShooping.IdentityServer\\wwwroot\\",
+      "BasePath": "_content/GeekShooping.IdentityServer",
+      "RelativePath": "css/estilos.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\estilos.css"
     },
     {
       "Identity": "C:\\Fork\\GeekShooping\\GeekShooping\\GeekShooping.IdentityServer\\wwwroot\\css\\site.css",

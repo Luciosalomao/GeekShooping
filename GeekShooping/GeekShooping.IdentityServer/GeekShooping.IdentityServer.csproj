@@ -29,6 +29,7 @@
     <_ContentIncludedByDefault Remove="Views\Home\Error\Index.cshtml" />
     <_ContentIncludedByDefault Remove="Views\Shared\_Nav.cshtml" />
     <_ContentIncludedByDefault Remove="Views\Shared\_ValidationSummary.cshtml" />
+    <_ContentIncludedByDefault Remove="wwwroot\css\estilos.css" />
   </ItemGroup>
 
   <ItemGroup>

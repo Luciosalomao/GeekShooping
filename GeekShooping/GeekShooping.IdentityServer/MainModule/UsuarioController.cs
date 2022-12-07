@@ -9,9 +9,12 @@ namespace GeekShooping.IdentityServer.MainModule
     public class UsuarioController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
-        public UsuarioController(UserManager<IdentityUser> userManager)
+        private readonly SignInManager<IdentityUser> _signInManager;
+
+        public UsuarioController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
         {
             this._userManager = userManager;
+            this._signInManager = signInManager;
         }
 
         [HttpGet]
@@ -133,6 +136,12 @@ namespace GeekShooping.IdentityServer.MainModule
                 }
             }
 
+        }
+
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
         }
     }
 }
