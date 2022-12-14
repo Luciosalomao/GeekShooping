@@ -40,7 +40,9 @@ namespace GeekShooping.Identity.Data.Migrations
                     TwoFactorEnabled = table.Column<bool>(nullable: false),
                     LockoutEnd = table.Column<DateTimeOffset>(nullable: true),
                     LockoutEnabled = table.Column<bool>(nullable: false),
-                    AccessFailedCount = table.Column<int>(nullable: false)
+                    AccessFailedCount = table.Column<int>(nullable: false),
+                    Nome = table.Column<string>(maxLength: 50, nullable: true),
+                    Sobrenome = table.Column<string>(maxLength: 100, nullable: true)
                 },
                 constraints: table =>
                 {
