@@ -24,3 +24,8 @@ C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\obj\Debug\net6.0\GeekShooping
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\obj\Debug\net6.0\GeekShooping.web.genruntimeconfig.cache
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\obj\Debug\net6.0\ref\GeekShooping.web.dll
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\obj\Debug\net6.0\GeekShooping.web.csproj.CopyComplete
