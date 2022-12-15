@@ -1,0 +1,6 @@
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.Identity\obj\Release\net6.0\GeekShooping.Identity.csproj.AssemblyReference.cache
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.Identity\obj\Release\net6.0\GeekShooping.Identity.AssemblyInfoInputs.cache
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.Identity\obj\Release\net6.0\GeekShooping.Identity.AssemblyInfo.cs
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.Identity\obj\Release\net6.0\GeekShooping.Identity.csproj.CoreCompileInputs.cache
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.Identity\obj\Release\net6.0\GeekShooping.Identity.MvcApplicationPartsAssemblyInfo.cs
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.Identity\obj\Release\net6.0\GeekShooping.Identity.MvcApplicationPartsAssemblyInfo.cache
