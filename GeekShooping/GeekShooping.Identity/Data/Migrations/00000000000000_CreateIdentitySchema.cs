@@ -41,8 +41,8 @@ namespace GeekShooping.Identity.Data.Migrations
                     LockoutEnd = table.Column<DateTimeOffset>(nullable: true),
                     LockoutEnabled = table.Column<bool>(nullable: false),
                     AccessFailedCount = table.Column<int>(nullable: false),
-                    Nome = table.Column<string>(maxLength: 50, nullable: true),
-                    Sobrenome = table.Column<string>(maxLength: 100, nullable: true)
+                    nome = table.Column<string>(maxLength: 50, nullable: true),
+                    sobrenome = table.Column<string>(maxLength: 100, nullable: true)
                 },
                 constraints: table =>
                 {

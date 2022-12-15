@@ -78,7 +78,7 @@ namespace GeekShooping.Identity.Areas.Identity.Pages.Account
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
             [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+            [StringLength(100, ErrorMessage = "O {0} deve ter pelo menos {2} e no máximo {1} caracteres.", MinimumLength = 6)]
             [DataType(DataType.Password)]
             [Display(Name = "Password")]
             public string Password { get; set; }
@@ -89,16 +89,16 @@ namespace GeekShooping.Identity.Areas.Identity.Pages.Account
             /// </summary>
             [DataType(DataType.Password)]
             [Display(Name = "Confirm password")]
-            [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+            [Compare("Password", ErrorMessage = "A senha e a senha de confirmação não correspondem.")]
             public string ConfirmPassword { get; set; }
 
             [Required]
             [Display(Name = "Nome")]
-            public string Nome { get; set; }
+            public string nome { get; set; }
 
             [Required]
             [Display(Name = "Sobrenome")]
-            public string Sobrenome { get; set; }
+            public string sobrenome { get; set; }
         }
 
 
@@ -115,7 +115,7 @@ namespace GeekShooping.Identity.Areas.Identity.Pages.Account
             if (ModelState.IsValid)
             {
                 //var user = CreateUser();
-                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email, nome = Input.Nome, sobrenome = Input.Sobrenome };
+                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email, nome = Input.nome, sobrenome = Input.sobrenome };
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
@@ -123,7 +123,7 @@ namespace GeekShooping.Identity.Areas.Identity.Pages.Account
 
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation("User created a new account with password.");
+                    _logger.LogInformation("O usuário criou uma nova conta com senha.");
 
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
@@ -134,8 +134,8 @@ namespace GeekShooping.Identity.Areas.Identity.Pages.Account
                         values: new { area = "Identity", userId = userId, code = code, returnUrl = returnUrl },
                         protocol: Request.Scheme);
 
-                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                    await _emailSender.SendEmailAsync(Input.Email, "Confirme seu email",
+                        $"Por favor, confirme sua conta por <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicando aqui</a>.");
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
@@ -165,9 +165,9 @@ namespace GeekShooping.Identity.Areas.Identity.Pages.Account
             }
             catch
             {
-                throw new InvalidOperationException($"Can't create an instance of '{nameof(ApplicationUser)}'. " +
-                    $"Ensure that '{nameof(ApplicationUser)}' is not an abstract class and has a parameterless constructor, or alternatively " +
-                    $"override the register page in /Areas/Identity/Pages/Account/Register.cshtml");
+                throw new InvalidOperationException($"Não é possível criar uma instância de '{nameof(ApplicationUser)}'. " +
+                    $"Garanta que '{nameof(ApplicationUser)}' não é uma classe abstrata e possui um construtor sem parâmetros ou, alternativamente, " +
+                    $"substituir a página de registro em /Areas/Identity/Pages/Account/Register.cshtml");
             }
         }
 
@@ -175,7 +175,7 @@ namespace GeekShooping.Identity.Areas.Identity.Pages.Account
         {
             if (!_userManager.SupportsUserEmail)
             {
-                throw new NotSupportedException("The default UI requires a user store with email support.");
+                throw new NotSupportedException("A interface do usuário padrão requer um armazenamento de usuário com suporte a e-mail.");
             }
             return (IUserEmailStore<ApplicationUser>)_userStore;
         }
