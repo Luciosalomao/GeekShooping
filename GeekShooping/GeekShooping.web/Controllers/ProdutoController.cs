@@ -1,9 +1,11 @@
 ﻿using GeekShooping.web.Models;
 using GeekShooping.web.Services.IServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GeekShooping.web.Controllers
 {
+    //[Authorize]
     public class ProdutoController : Controller
     {
         private readonly IServiceProduto _serviceProduto;
@@ -13,6 +15,7 @@ namespace GeekShooping.web.Controllers
             _serviceProduto = serviceProduto ?? throw new ArgumentNullException(nameof(serviceProduto));
         }
 
+        [Authorize]
         public async Task<IActionResult> ProdutoIndex()
         {
             var produtos = await _serviceProduto.FindAllProdutos();

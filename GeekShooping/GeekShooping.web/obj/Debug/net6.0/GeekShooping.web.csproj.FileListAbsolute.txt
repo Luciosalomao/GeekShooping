@@ -29,3 +29,8 @@ C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\bin\Debug\net6.0\Microsoft.En
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\obj\Debug\net6.0\GeekShooping.web.csproj.CopyComplete
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Fork\GeekShooping\GeekShooping\GeekShooping.web\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

@@ -12,6 +12,16 @@ builder.Services.AddHttpClient<IServiceProduto, ProdutoService>(c =>
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultScheme = "Cookies";
+    options.DefaultChallengeScheme = "oidc";
+})
+    .AddCookie("Cookies", c => c.ExpireTimeSpan = TimeSpan.FromMinutes(10))
+    .AddOpenIdConnect("oidc", options =>
+    {
+        options.Authority = Conficuration["ServiceAPI:ProdutoAPI"]
+    });
 
 var app = builder.Build();
 
