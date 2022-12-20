@@ -22,11 +22,10 @@ builder.Services.AddAuthentication(options =>
     .AddCookie("Cookies", c => c.ExpireTimeSpan = TimeSpan.FromMinutes(10))
     .AddOpenIdConnect("oidc", options =>
     {
-        options.Authority = builder.Configuration["IdentityServer:IdentityServer"];
+        //options.Authority = builder.Configuration["IdentityServer:IdentityServer"];
         //Configurações abaixo usadas para buscar a claims
         //options.GetClaimsFromUserInfoEndpoint = true;        
         //options.ClientId = "geek_shopping";
-        options.ClientId = "";
         //options.ClientSecret = "my_super_secret";
         //options.ResponseType = "code";
         //options.ClaimActions.MapJsonKey("role", "role", "role");
@@ -35,6 +34,9 @@ builder.Services.AddAuthentication(options =>
         //options.TokenValidationParameters.RoleClaimType = "role";
         //options.Scope.Add("geek_shopping");
         //options.SaveTokens = true;
+
+        options.Authority = builder.Configuration["auth:oidc:authority"];
+        options.ClientId = builder.Configuration["auth:oidc:clientid"];
     });
 
 var app = builder.Build();
