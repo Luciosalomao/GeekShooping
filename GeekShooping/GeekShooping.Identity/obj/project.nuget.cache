@@ -1,13 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "Gx9lYuZI1pR8+ybktr2w7YvlEblvDqROblkoLWpEC1xpMR28a/Jo+qgcLMPb7wF5kvZztLaIMFnvbVgHxi+Tzg==",
+  "dgSpecHash": "0fqo/z6pHbgg1T6Yc8aeb+ZcQaj364Pcc9PjtII6T2HxH71UE0Lzptg9bYBqC6Ng3KzGbGqOo72PX9DPs4KXRQ==",
   "success": true,
   "projectFilePath": "C:\\Fork\\GeekShooping\\GeekShooping\\GeekShooping.Identity\\GeekShooping.Identity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucio.souza\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\lucio.souza\\.nuget\\packages\\identitymodel\\4.3.0\\identitymodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\lucio.souza\\.nuget\\packages\\identityserver4\\4.0.4\\identityserver4.4.0.4.nupkg.sha512",
+    "C:\\Users\\lucio.souza\\.nuget\\packages\\identityserver4.storage\\4.0.4\\identityserver4.storage.4.0.4.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
+    "C:\\Users\\lucio.souza\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\3.1.0\\microsoft.aspnetcore.authentication.openidconnect.3.1.0.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.12\\microsoft.aspnetcore.cryptography.internal.6.0.12.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.12\\microsoft.aspnetcore.cryptography.keyderivation.6.0.12.nupkg.sha512",
     "C:\\Users\\lucio.souza\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\6.0.10\\microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.10.nupkg.sha512",

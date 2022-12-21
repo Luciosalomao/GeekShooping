@@ -1,5 +1,7 @@
+using GeekShooping.Identity.Configuration;
 using GeekShooping.Identity.Data;
 using GeekShooping.Identity.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +14,21 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
+
+/*
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+builder.Services.AddIdentityServer(options =>
+{
+    options.Events.RaiseErrorEvents = true;
+    options.Events.RaiseInformationEvents = true;
+    options.Events.RaiseFailureEvents = true;  
+    options.Events.RaiseSuccessEvents = true;
+    options.EmitStaticAudienceClaim = true;
+}).AddInMemoryIdentityResources(
+    IdentityConfiguration.IdentityResources
+    ).AddInMemoryApiScopes(IdentityConfiguration.ApiScopes).AddInMemoryClients(IdentityConfiguration.Clients).AddDeveloperSigningCredential();
+*/
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
@@ -34,6 +51,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthentication();
+//app.UseIdentityServer();
 app.UseAuthorization();
 
 app.MapControllerRoute(
