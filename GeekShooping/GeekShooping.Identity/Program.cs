@@ -17,6 +17,7 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
 
 /*
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+//builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddIdentityServer(options =>
 {
     options.Events.RaiseErrorEvents = true;
@@ -27,9 +28,10 @@ builder.Services.AddIdentityServer(options =>
 }).AddInMemoryIdentityResources(
     IdentityConfiguration.IdentityResources
     ).AddInMemoryApiScopes(IdentityConfiguration.ApiScopes).AddInMemoryClients(IdentityConfiguration.Clients).AddDeveloperSigningCredential();
-*/
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
+*/
 
 var app = builder.Build();
 
