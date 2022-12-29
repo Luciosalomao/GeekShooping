@@ -10,22 +10,24 @@ var builder = WebApplication.CreateBuilder(args);
 //Para consumir API
 builder.Services.AddHttpClient<IServiceProduto, ProdutoService>(c =>
     c.BaseAddress = new Uri(builder.Configuration["ServiceAPI:ProdutoAPI"])
-); 
+);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultScheme = "Cookies";
     options.DefaultChallengeScheme = "oidc";
 })
+
     .AddCookie("Cookies", c => c.ExpireTimeSpan = TimeSpan.FromMinutes(10))
     .AddOpenIdConnect("oidc", options =>
     {
-        options.Authority = builder.Configuration["IdentityServer:IdentityServer"];
+        options.Authority = builder.Configuration["ServiceUrls:IdentityServer"];
         //Configurações abaixo usadas para buscar a claims
-        options.GetClaimsFromUserInfoEndpoint = true;        
-        //options.ClientId = "geek_shopping";
+        //options.GetClaimsFromUserInfoEndpoint = true;        
+        options.ClientId = "geek_shopping";
         //options.ClientSecret = "my_super_secret";
         //options.ResponseType = "code";
         //options.ClaimActions.MapJsonKey("role", "role", "role");
@@ -38,6 +40,7 @@ builder.Services.AddAuthentication(options =>
         //options.Authority = builder.Configuration["auth:oidc:authority"];
         //options.ClientId = builder.Configuration["auth:oidc:clientid"];
     });
+
 
 var app = builder.Build();
 
